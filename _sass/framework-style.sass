@@ -1,0 +1,93 @@
+/* === variables === */
+$text-color: #464b4f
+$error-color: #e7422d
+$success-color: #72b846
+$gray-color: #dee2e4
+$green-color: #70b93f
+$orange-color: #ffad43
+$blue-color: #3365b0
+
+
+
+/* === mixins === */
+=border-radius( $radius: 3px )
+    -webkit-border-radius: $radius
+    -moz-border-radius:    $radius
+    -ms-border-radius:     $radius
+    border-radius:         $radius
+
+=transition( $prorerty: all, $animation: ease-out)
+    -webkit-transition: $prorerty $animation 0.2s
+    -moz-transition:    $prorerty $animation 0.2s
+    -o-transition:      $prorerty $animation 0.2s
+    transition:         $prorerty $animation 0.2s
+
+=box-shadow( $color )
+    -webkit-box-shadow: 0 0 8px rgba($color,.6)
+    box-shadow:         0 0 8px rgba($color,.6)
+
+=keyframes($name)
+  @-webkit-keyframes #{$name}
+    @content
+  @-moz-keyframes #{$name}
+    @content
+  @-ms-keyframes #{$name}
+    @content
+  @keyframes #{$name}
+    @content
+
+
+/* === common style === */
+body
+    color: $text-color
+
+::-webkit-input-placeholder
+    color: lighten($text-color, 30%)
+    text-overflow:ellipsis
+::-moz-placeholder
+    color: lighten($text-color, 30%)
+    text-overflow:ellipsis
+:-moz-placeholder
+    color: lighten($text-color, 30%)
+    text-overflow:ellipsis
+:-ms-input-placeholder
+    color: lighten($text-color, 30%)
+    text-overflow:ellipsis
+
+
+/* === forms elements === */
+textarea,
+input,
+select
+    border: $gray-color solid 1px
+    padding: 6px 12px
+    font-size: 14px
+    line-height: 18px
+    outline: none
+    background-color: white
+    +border-radius(3px)
+    +transition()
+
+
+    &:focus
+        box-shadow: 0 0 8px rgba(114,184,70,.6)
+        border: 1px solid $green-color
+        &::-webkit-input-placeholder
+            opacity: 0
+        &::-moz-placeholder
+            opacity: 0
+        &:-moz-placeholder
+            opacity: 0
+        &:-ms-input-placeholder
+            opacity: 0
+
+    &[disabled]
+        background-color: lighten($gray-color, 5%)
+        cursor: not-allowed
+        color: lighten($text-color, 50%) !important
+
+    &[disabled]:hover
+        cursor: not-allowed
+
+
+

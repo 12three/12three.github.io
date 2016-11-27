@@ -1,0 +1,82 @@
+.b-form-section__radio
+    position: absolute
+    top: -9999px
+
+    &
+        position: absolute
+        left: 0
+        top: 0
+        vertical-align: top
+        width: 17px !important
+        height: 17px !important
+
+    & + label
+        position: relative
+        cursor: pointer
+
+    &:not(checked)
+        position: absolute
+        opacity: 0
+
+    &:not(checked) + label
+        padding: 0 0 0 25px
+
+    &:not(checked) + label:before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 18px
+        height: 18px
+        border: 1px solid $gray-color
+        border-radius: 50%
+        background: #f8f8f8
+
+    &:not(checked) + label:after
+        content: ''
+        position: absolute
+        top: 8px
+        left: 8px
+        width: 7px
+        height: 7px
+        border-radius: 50%
+        background: #9FD468
+        opacity: 0
+        transition: all .2s
+
+    &:checked + label:after
+        opacity: 1
+        transform: scale(1)
+
+    &:not(checked) + label:after
+        content: ''
+        position: absolute
+        top: 6px
+        left: 6px
+        width: 6px
+        height: 6px
+        border-radius: 50%
+        background: $green-color
+        opacity: 0
+        transform: scale(0)
+        transition: all .2s
+
+    &:checked + label:after
+        opacity: 1
+
+    &:checked:focus + label:before,
+    &:not(:checked):focus + label:before
+        border: 1px solid darken($gray-color, 20%)
+
+    &:disabled,
+    &[readonly="readonly"]:disabled
+        cursor: pointer !important
+
+    &:disabled + label,
+    &[readonly="readonly"] + label
+        color: lighten($text-color, 50%)
+
+    &:disabled + label:before,
+    &[readonly="readonly"] + label:before
+        border-color: lighten($text-color, 50%)
+        background-color: #eceeef

@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>jiji-framework</title>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+  <link rel="stylesheet" href="css/common.min.css">
+  <link rel="stylesheet" href="css/main.min.css"></head>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"></script>
+<body>
+
+  <div class="container">
+    <div class="main-wrapp">
+      <div class="main">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="logical-block">
+              <div class="logical-block__header">
+                <h2 data-scroll-index="1" class="h-inline-block h-pr-5">Поддержка браузерами</h2><span class="footnote">состояние на 09.16</span>
+              </div>
+<p>Поддержка компонентов мобильными браузерами <span class="footnote">>76%</span></p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Opera mini <span class="footnote">51,8%</span></th>
+            <th>Chrome <span class="footnote">27,6%</span></th>
+            <th>Android browser <span class="footnote">5,3%</span></th>
+            <th>Safari <span class="footnote">4,8%</span></th>
+            <th>BlackBerry <span class="footnote">4,4%</span></th>
+            <th>UC brouser <span class="footnote">2,6%</span></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="h-green-row">
+            <td>4+</td>
+            <td>30+</td>
+            <td>4+</td>
+            <td>9+</td>
+            <td>10+</td>
+            <td>10+</td>
+        </tr>
+    </tbody>
+</table>
+
+<p>Поддержка компонентов десктопными браузерами и планшетами <span class="footnote">7,55%</span></p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Chrome <span class="footnote">41,5%</span></th>
+            <th>Firefox <span class="footnote">34,5%</span></th>
+            <th>IE <span class="footnote">7,3%</span></th>
+            <th>UC browser <span class="footnote">7,2%</span></th>
+            <th>Opera <span class="footnote">5,8%</span></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="h-green-row">
+            <td>49+</td>
+            <td>43+</td>
+            <td>11+</td>
+            <td>10+</td>
+            <td>39+</td>
+        </tr>
+    </tbody>
+</table>
+            </div>
+            <div class="logical-block">
+              <div class="logical-block__header">
+                <h2 data-scroll-index="2">Кнопки</h2>
+              </div>
+<h3>Типы</h3>
+<div class="b-example">
+    <header>
+        <table class="b-example__prev-shelf">
+            <tr>
+                <td>
+                    <button class="b-button" >Кнопка</button>
+                </td>
+                <td>
+                    <button class="b-button b-button--primary">Кнопка</button>
+                </td>
+                <td>
+                    <button class="b-button b-button--secondary">Кнопка</button>
+                </td>
+                <td>
+                    <button class="b-button b-button--info">Кнопка</button>
+                </td>
+                <td>
+                    <button class="b-button b-button--info" disabled>Кнопка</button>
+                </td>
+            </tr>
+                <tr>
+                    <td>
+                        <button class="b-button b-button--default-light">Кнопка</button>
+                    </td>
+                    <td>
+                        <button class="b-button b-button--primary-light">Кнопка</button>
+                    </td>
+                    <td>
+                        <button class="b-button b-button--secondary-light">Кнопка</button>
+                    </td>
+                    <td>
+                        <button class="b-button b-button--info-light">Кнопка</button>
+                    </td>
+                    <td>
+                        <button class="b-button b-button--info-light" disabled>Кнопка</button>
+                    </td>
+                </tr>
+        </table>
+    </header>
+    <footer>
+<pre class="language-markup">
+<code class="language-markup">  &lt;button class="b-button"&gt;Кнопка&lt;/button&gt;
+  &lt;button class="b-button b-button--primary"&gt;Кнопка&lt;/button&gt;
+  &lt;button class="b-button b-button--secondary"&gt;Кнопка&lt;/button&gt;
+  &lt;button class="b-button b-button--info"&gt;Кнопка&lt;/button&gt;
+  &lt;!-- неактивное состояние --&gt;
+  &lt;button class="b-button b-button--info" disabled&gt;    Кнопка&lt;/button&gt;
+
+  &lt;button class="b-button b-button--default-light"&gt;Кнопка&lt;/button&gt;
+  &lt;button class="b-button b-button--primary-light"&gt;Кнопка&lt;/button&gt;
+  &lt;button class="b-button b-button--secondary-light"&gt;Кнопка&lt;/button&gt;
+  &lt;button class="b-button b-button--info-light"&gt;Кнопка&lt;/button&gt;
+  &lt;!-- неактивное состояние --&gt;
+  &lt;button class="b-button b-button--info-light" disabled&gt;  Кнопка&lt;/button&gt;</code></pre>
+</footer>
+</div>
+<h3>Размеры</h3>
+<div class="b-example">
+    <header>
+        <table class="b-example__prev-shelf">
+            <tr>
+                <td>
+                    <button class="b-button b-button--primary-light b-button--size-full">Кнопка</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="b-button b-button--primary-light">Кнопка</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="b-button b-button--primary-light b-button--primary b-button--size-small">Кнопка</button>
+                </td>
+            </tr>
+        </table>
+    </header>
+    <footer>
+<pre class="language-markup">
+<code class="language-markup">  &lt;!-- ширина зависит от родителя --&gt;
+  &lt;button class="b-button b-button--primary-light b-button--size-full"&gt;Кнопка&lt;/button&gt;
+  &lt;button class="b-button b-button--primary-light"&gt;Кнопка&lt;/button&gt;
+  &lt;button class="b-button b-button--primary-light b-button--size-small"&gt;Кнопка&lt;/button&gt;</code></pre>
+</footer>
+</div>
+<h3>Модификаторы</h3>
+<div class="b-example">
+    <header>
+        <table class="b-example__prev-shelf">
+            <tr>
+                <td>
+                    <button class="b-button b-button--primary b-button--shadow">Кнопка</button>
+                </td>
+                <td>
+                    <button class="b-button b-button--primary b-button--border-radius">Кнопка</button>
+                </td>
+                <td>
+                    <button class="b-button b-button--primary b-button--load" id="test-load-button">Кнопка</button>
+                </td>
+            </tr>
+        </table>
+    </header>
+    <footer>
+<pre class="language-markup">
+<code class="language-markup">  &lt;!-- добавить тень --&gt;
+  &lt;button class="b-button b-button--primary b-button--shadow"&gt;Кнопка&lt;/button&gt;
+  &lt;!-- добавить скругления --&gt;
+  &lt;button class="b-button b-button--primary b-button--border-radius"&gt;Кнопка&lt;/button&gt;
+  &lt;!-- отобразить процес загрузки --&gt;
+  &lt;button class="b-button b-button--primary b-button--load"&gt;Кнопка&lt;/button&gt;</code></pre>
+</footer>
+</div>
+            </div>
+            <div class="logical-block">
+              <div class="logical-block__header">
+                <h2 data-scroll-index="3">Элементы форм</h2>
+              </div>
+<p>По умолчанию размер элемента зависят от контекста в котором используется, для получения требуемой ширины ее нужно задать обертке.</p>
+<div class="b-example">
+    <header>
+        <div class="b-form-section">
+            <label class="b-form-section__title" for="input-01">Input`s title</label>
+            <div class="b-form-section__elem-wrapp">
+                <input type="text" placeholder="Some placeholder" id="input-01">
+            </div>
+        </div>
+    </header>
+    <footer>
+<pre class="language-markup">
+<code class="language-markup">  &lt;div class="b-form-section"&gt;
+    &lt;label class="b-form-section__title" for="input-01"&gt;Input`s title&lt;/label&gt;
+    &lt;div class="b-form-section__elem-wrapp"&gt;
+      &lt;input type="text" placeholder="Some placeholder" id="input-01"&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;</code>
+</pre>
+    </footer>
+</div>
+<p>Любой элемент(ы) формы должен(ы) быть заключен в тег с классом <code class="language-sass">.b-form-section</code>. Отображение дочерних элементов будет зависить от его модификации.</p>
+<div class="b-example">
+    <header>
+        <div class="b-form-section b-form-section--required">
+            <label class="b-form-section__title" for="input-02">Input`s title</label>
+            <div class="b-form-section__elem-wrapp">
+                <input type="text" placeholder="Some placeholder" id="input-02">
+            </div>
+        </div>
+        <div class="b-form-section b-form-section--success">
+            <label class="b-form-section__title" for="input-03">Input`s title</label>
+            <div class="b-form-section__elem-wrapp">
+                <input type="text" placeholder="Some placeholder" id="input-03">
+            </div>
+        </div>
+        <div class="b-form-section b-form-section--error">
+            <label class="b-form-section__title" for="input-04">Input`s title</label>
+            <div class="b-form-section__elem-wrapp">
+                <input type="text" placeholder="Some placeholder" id="input-04">
+            </div>
+            <div class="b-form-section__error-descr">
+                This field is required
+            </div>
+        </div>
+    </header>
+    <footer>
+<pre class="language-markup">
+  <code class="language-markup">&lt;!-- элемент обязателен для заполнения --&gt
+  &lt;div class="b-form-section b-form-section--required"&gt;
+    &lt;label class="b-form-section__title"  for="input-02"&gt;Input`s title&lt;/label&gt;
+    &lt;div class="b-form-section__elem-wrapp"&gt;
+      &lt;input type="text" placeholder="Some placeholder" id="input-02"&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- успешная валидация --&gt
+  &lt;div class="b-form-section b-form-section--success"&gt;
+    &lt;label class="b-form-section__title" for="input-03"&gt;Input`s title&lt;/label&gt;
+    &lt;div class="b-form-section__elem-wrapp"&gt;
+      &lt;input type="text" placeholder="Some placeholder" id="input-03"&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- ошибка при валидации поля --&gt
+  &lt;div class="b-form-section b-form-section--error"&gt;
+    &lt;label class="b-form-section__title" for="input-04"&gt;Input`s title&lt;/label&gt;
+    &lt;div class="b-form-section__elem-wrapp"&gt;
+      &lt;input type="text" placeholder="Some placeholder" id="input-04"&gt;
+    &lt;/div&gt;
+    &lt;div class="b-form-section__error-descr"&gt;
+        This field is required
+    &lt;/div&gt;
+  &lt;/div&gt;</code>
+</pre>
+    </footer>
+</div>
+<h3>Разметка элементов форм</h3>
+<div class="b-example">
+    <header>
+        <div class="b-form-section">
+            <label class="b-form-section__title" for="input-05">Input`s title</label>
+            <div class="b-form-section__elem-wrapp">
+                <input type="text" placeholder="Some placeholder" id="input-05">
+            </div>
+        </div>
+        <div class="b-form-section">
+            <div class="b-form-section__elem-wrapp">
+                <input type="text" placeholder="Some placeholder" disabled>
+            </div>
+        </div>
+        <div class="b-form-section">
+            <div class="b-form-section__elem-wrapp">
+                <input type="text" placeholder="Some placeholder" readonly="readonly" value="Only read">
+            </div>
+        </div>
+    </header>
+    <footer>
+<pre class="language-markup">
+  <code class="language-markup">&lt;div class="b-form-section"&gt;
+    &lt;label class="b-form-section__title" for="input-05"&gt;Input`s title&lt;/label&gt;
+    &lt;div class="b-form-section__elem-wrapp"&gt;
+      &lt;input type="text" placeholder="Some placeholder" id="input-05"&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- неактивное поле --&gt;
+  &lt;div class="b-form-section"&gt;
+    &lt;div class="b-form-section__elem-wrapp"&gt;
+      &lt;input type="text" placeholder="Some placeholder" disabled&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- только для чтения --&gt;
+  &lt;div class="b-form-section"&gt;
+    &lt;div class="b-form-section__elem-wrapp"&gt;
+      &lt;input type="text" placeholder="Some placeholder" readonly="readonly" value="Only read"&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;</code>
+</pre>
+    </footer>
+</div>
+<div class="b-example">
+    <header>
+        <div class="b-form-section">
+            <label class="b-form-section__title" for="textarea-01">Textarea`s title</label>
+            <div class="b-form-section__elem-wrapp">
+                <textarea rows="5" placeholder="Some placeholder" id="textarea-01"></textarea>
+            </div>
+        </div>
+        <div class="b-form-section">
+            <div class="b-form-section__elem-wrapp">
+                <textarea rows="5" placeholder="Some placeholder" disabled></textarea>
+            </div>
+        </div>
+        <div class="b-form-section">
+            <div class="b-form-section__elem-wrapp">
+                <textarea rows="5" placeholder="Some placeholder" readonly="readonly">Only read</textarea>
+            </div>
+        </div>
+    </header>
+    <footer>
+<pre class="language-markup">
+  <code class="language-markup">&lt;div class="b-form-section"&gt;
+    &lt;label class="b-form-section__title" for="textarea-01"&gt;Textarea`s title&lt;/label&gt;
+    &lt;div class="b-form-section__elem-wrapp"&gt;
+      &lt;textarea rows="5" placeholder="Some placeholder" id="textarea-01"&gt;&lt;textarea&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- неактивное поле --&gt;
+  &lt;div class="b-form-section"&gt;
+    &lt;div class="b-form-section__elem-wrapp"&gt;
+      &lt;textarea rows="5" placeholder="Some placeholder" disabled&gt;&lt;textarea&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- только для чтения --&gt;
+  &lt;div class="b-form-section"&gt;
+    &lt;div class="b-form-section__elem-wrapp"&gt;
+      &lt;textarea rows="5" placeholder="Some placeholder" readonly="readonly"&gt;Only read&lt;textarea&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;</code>
+</pre>
+    </footer>
+</div>
+<div class="b-example">
+    <header>
+        <div class="b-form-section" >
+            <label class="b-form-section__title" for="select-01">Select`s title</label>
+            <div class="b-form-section__elem-wrapp">
+                <select id="select-01" >
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                    <option>Option 4</option>
+                    <option>Option 5</option>
+                </select>
+            </div>
+        </div>
+        <div class="b-form-section" >
+            <div class="b-form-section__elem-wrapp">
+                <select disabled>
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                    <option>Option 4</option>
+                    <option>Option 5</option>
+                </select>
+            </div>
+        </div>
+        <div class="b-form-section" >
+            <div class="b-form-section__elem-wrapp">
+                <select readonly="readonly">
+                    <option disabled>Option 1</option>
+                    <option readonly>Only read</option>
+                    <option disabled>Option 3</option>
+                    <option disabled>Option 4</option>
+                    <option disabled>Option 5</option>
+                </select>
+            </div>
+        </div>
+    </header>
+    <footer>
+<pre class="language-markup">
+<code class="language-markup">  &lt;div class="b-form-section" &gt;
+    &lt;label class="b-form-section__title" for="select-01"&gt;Select`s title&lt;/label&gt;
+    &lt;div class="b-form-section__elem-wrapp"&gt;
+      &lt;select id="select-0s1"&gt;
+        &lt;option&gt;Option 1&lt;/option&gt;
+        &lt;option&gt;Option 2&lt;/option&gt;
+        &lt;option&gt;Option 3&lt;/option&gt;
+        &lt;option&gt;Option 4&lt;/option&gt;
+        &lt;option&gt;Option 5&lt;/option&gt;
+      &lt;/select&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- неактивное поле --&gt;
+  &lt;div class="b-form-section"&gt;
+    &lt;div class="b-form-section__elem-wrapp"&gt;
+      &lt;select disabled&gt;
+        &lt;option&gt;Option 1&lt;/option&gt;
+        &lt;option&gt;Option 2&lt;/option&gt;
+        &lt;option&gt;Option 3&lt;/option&gt;
+        &lt;option&gt;Option 4&lt;/option&gt;
+        &lt;option&gt;Option 5&lt;/option&gt;
+      &lt;/select&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- только для чтения --&gt;
+  &lt;div class="b-form-section"&gt;
+    &lt;div class="b-form-section__elem-wrapp"&gt;
+      &lt;select &gt;
+        &lt;option disabled&gt;Option 1&lt;/option&gt;
+        &lt;option readonly="readonly"&gt;Only read&lt;/option&gt;
+        &lt;option disabled&gt;Option 3&lt;/option&gt;
+        &lt;option disabled&gt;Option 4&lt;/option&gt;
+        &lt;option disabled&gt;Option 5&lt;/option&gt;
+      &lt;/select&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;</code>
+</pre>
+    </footer>
+</div>
+<p>При необходимости отображать значок валидности элемента около его названия, добавляем модификатор <code class="language-sass">.b-form-section__title--valid-block</code></p>
+<div class="b-example">
+    <header>
+        <div class="b-form-section b-form-section--success">
+            <label class="b-form-section__title b-form-section__title--valid-block">Check`s title</label>
+            <div class="b-form-section__row">
+                <input class="b-form-section__checkbox" type="checkbox" id="checkbox-01" />
+                <label for="checkbox-01">Red</label>
+            </div>
+            <div class="b-form-section__row">
+                <input class="b-form-section__checkbox" type="checkbox" id="checkbox-02" checked="checked" />
+                <label for="checkbox-02">Yellow</label>
+            </div>
+            <div class="b-form-section__row">
+                <input class="b-form-section__checkbox" type="checkbox" id="checkbox-03" checked="checked" disabled="disabled" />
+                <label for="checkbox-03">Green</label>
+            </div>
+            <div class="b-form-section__row">
+                <input class="b-form-section__checkbox" type="checkbox" id="checkbox-04" disabled="disabled" />
+                <label for="checkbox-04">Brown</label>
+            </div>
+            <div class="b-form-section__row">
+                <input class="b-form-section__checkbox" type="checkbox" id="checkbox-05" checked="checked" readonly="readonly" />
+                <label for="checkbox-05" onclick="return false">Only read</label>
+            </div>
+        </div>
+    </header>
+    <footer>
+<pre class="language-markup">
+<code class="language-markup">  &lt;div class="b-form-section b-form-section--success"&gt;
+    &lt;label class="b-form-section__title b-form-section__title--valid-block">Check`s title&lt;/label&gt;
+    &lt;div class="b-form-section__row"&gt;
+      &lt;input class="b-form-section__checkbox" type="checkbox" id="checkbox-01" /&gt;
+      &lt;label for="checkbox-01"&gt;Red&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class="b-form-section__row"&gt;
+      &lt;input class="b-form-section__checkbox" type="checkbox" id="checkbox-02" checked="checked"/&gt;
+      &lt;label for="checkbox-02"&gt;Yellow&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class="b-form-section__row"&gt;
+      &lt;input class="b-form-section__checkbox" type="checkbox" id="checkbox-03" checked="checked" disabled="disabled"/&gt;
+      &lt;label for="checkbox-03"&gt;Green&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class="b-form-section__row"&gt;
+      &lt;input class="b-form-section__checkbox" type="checkbox" id="checkbox-04" disabled="disabled"/&gt;
+      &lt;label for="checkbox-04"&gt;Brown&lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+    &lt;div class="b-form-section__row"&gt;
+      &lt;input class="b-form-section__checkbox" type="checkbox" id="checkbox-05" checked="checked" readonly="readonly"/&gt;
+      &lt;label for="checkbox-05" onclick="return false"&gt;Only read&lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;</code>
+</pre>
+    </footer>
+</div>
+<div class="b-example">
+    <header>
+        <div class="b-form-section" >
+            <label class="b-form-section__title b-form-section__title--valid-block">Radio`s title</label>
+            <div class="b-form-section__row">
+                <input class="b-form-section__radio" type="radio" name="radio-group" id="radio-01"/>
+                <label for="radio-01">Red</label>
+            </div>
+            <div class="b-form-section__row">
+                <input class="b-form-section__radio" type="radio" name="radio-group" id="radio-02" checked="checked"/>
+                <label for="radio-02">Yellow</label>
+            </div>
+            <div class="b-form-section__row">
+                <input class="b-form-section__radio" type="radio" name="radio-group" id="radio-03">
+                <label for="radio-03">Green</label>
+            </div>
+            <div class="b-form-section__row">
+                <input class="b-form-section__radio" type="radio" name="radio-group" id="radio-04" disabled="disabled"/>
+                <label for="radio-04">Brown</label>
+            </div>
+        </div>
+        <div class="b-form-section" >
+            <label class="b-form-section__title b-form-section__title--valid-block">Radio`s title</label>
+            <div class="b-form-section__row">
+                <input class="b-form-section__radio" type="radio" name="radio-group-2" id="radio-201" disabled="disabled"/>
+                <label for="radio-201" >Red</label>
+            </div>
+            <div class="b-form-section__row">
+                <input class="b-form-section__radio" type="radio" name="radio-group-2" id="radio-202" checked="checked" readonly="readonly"/>
+                <label for="radio-202">Yellow</label>
+            </div>
+            <div class="b-form-section__row">
+                <input class="b-form-section__radio" type="radio" name="radio-group-2" id="radio-203" disabled="disabled">
+                <label for="radio-203">Green</label>
+            </div>
+            <div class="b-form-section__row">
+                <input class="b-form-section__radio" type="radio" name="radio-group-2" id="radio-204" disabled="disabled"/>
+                <label for="radio-204">Brown</label>
+            </div>
+        </div>
+    </header>
+    <footer>
+<pre class="language-markup">
+<code class="language-markup">  &lt;div class="b-form-section"&gt;
+    &lt;label class="b-form-section__title b-form-section__title--valid-block"&gt;Radio`s title&lt;/label&gt;
+    &lt;div class="b-form-section__row"&gt;
+       &lt;input class="b-form-section__radio" type="radio" name="radio-group" id="radio-01"/&gt;
+       &lt;label for="radio-01">Red&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class="b-form-section__row"&gt;
+       &lt;input class="b-form-section__radio" type="radio" name="radio-group" id="radio-02" checked="checked"/&gt;
+       &lt;label for="radio-02">Yellow&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class="b-form-section__row"&gt;
+       &lt;input class="b-form-section__radio" type="radio" name="radio-group" id="radio-03"&gt;
+       &lt;label for="radio-03">Green&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class="b-form-section__row"&gt;
+       &lt;input class="b-form-section__radio" type="radio" name="radio-group" id="radio-04" disabled="disabled"/&gt;
+       &lt;label for="radio-04">Brown&lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- группа радиокнопок предназначеных только для чтения --&gt;
+  &lt;div class="b-form-section"&gt;
+    &lt;label class="b-form-section__title b-form-section__title--valid-block"&gt;Radio`s title&lt;/label&gt;
+    &lt;div class="b-form-section__row"&gt;
+       &lt;input class="b-form-section__radio" type="radio" name="radio-group-2" id="radio-201" disabled="disabled"/&gt;
+       &lt;label for="radio-201">Red&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class="b-form-section__row"&gt;
+       &lt;input class="b-form-section__radio" type="radio" name="radio-group-2" id="radio-202" checked="checked" readonly="readonly"/&gt;
+       &lt;label for="radio-202">Yellow&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class="b-form-section__row"&gt;
+       &lt;input class="b-form-section__radio" type="radio" name="radio-group-2" id="radio-203" disabled="disabled"&gt;
+       &lt;label for="radio-203">Green&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class="b-form-section__row"&gt;
+       &lt;input class="b-form-section__radio" type="radio" name="radio-group-2" id="radio-204" disabled="disabled"/&gt;
+       &lt;label for="radio-204">Brown&lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;</code>
+</pre>
+    </footer>
+</div>
+<div class="b-example">
+    <header>
+        <div class="b-form-section" >
+            <label class="b-form-section__title b-form-section__title--valid-block">Title</label>
+            <div>
+                <div class="b-input-group">
+                    <label class="b-input-group__label" for="input-7">₦</label>
+                    <div class="b-input-group__input-wrapp">
+                        <input class="b-input-group__input" id="input-7" type="text" type="text" placeholder="Enter price">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <footer>
+<pre class="language-markup">
+<code class="language-markup">  &lt;div class="b-form-section"&gt;
+    &lt;label class="b-form-section__title b-form-section__title--valid-block"&gt;Title&lt;/label&gt;
+    &lt;div&gt;
+      &lt;div class="b-input-group"&gt;
+        &lt;label class="b-input-group__label" for="input-7"&gt;₦&lt;/label&gt;
+        &lt;div class="b-input-group__input-wrapp"&gt;
+          &lt;input class="b-input-group__input" id="input-7" type="text" type="text" placeholder="Enter price"&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;</code>
+</pre>
+                </footer>
+              </div>
+            </div>
+            <div class="logical-block">
+              <div class="logical-block__header">
+                <h2 data-scroll-index="5">Блок для контента</h2>
+              </div>
+
+<div class="b-example">
+    <header>
+        <div class="b-content-area b-content-area--shadow b-content-area--border-radius">
+            <div class="b-content-area__header">
+                Some title
+            </div>
+            <div class="b-content-area__body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat animi id harum, suscipit ex, nam delectus nemo tenetur, sed quidem sit soluta rerum quam natus ipsam temporibus adipisci ea impedit. Nisi nesciunt facere perferendis natus velit rem iste maxime, quidem, cupiditate tenetur necessitatibus consequuntur optio eaque, quo aliquid ex. Rerum amet reprehenderit eius ut placeat blanditiis porro assumenda ex iste fuga error maiores et praesentium, fugit est sunt, distinctio at omnis ea? Sed unde id numquam voluptatum qui mollitia nobis earum! Enim, saepe optio obcaecati esse. Amet eaque vero quisquam enim dolores beatae obcaecati, labore, id dignissimos atque, minus minima.
+            </div>
+        </div>
+    </header>
+    <footer>
+<pre class="language-markup">
+  <code class="language-markup">&lt;div class="b-content-area b-content-area--shadow b-content-area--border-radius"&gt;
+      &lt;div class="b-content-area__header"&gt;
+          Some title
+      &lt;/div&gt;
+      &lt;div class="b-content-area__body"&gt;
+          Block content
+      &lt;/div&gt;
+  &lt;/div&gt;</code>
+</pre>
+    </footer>
+</div>
+            </div>
+            <div class="logical-block">
+              <div class="logical-block__header">
+                <h2 data-scroll-index="4">Списки</h2>
+              </div>
+<div class="b-example">
+    <header>
+        <div>
+          <ul class="b-marked-list">
+              <li class="b-marked-list__item">First item</li>
+              <li class="b-marked-list__item">Second item</li>
+              <li class="b-marked-list__item">Third item</li>
+              <li class="b-marked-list__item">Fourth item</li>
+          </ul>
+        </div>
+    </header>
+    <footer>
+<pre class="language-markup">
+<code class="language-markup">  &lt;ul class="b-marked-list"&gt;
+    &lt;li class="b-marked-list__item"&gt;First item&lt;/li&gt;
+    &lt;li class="b-marked-list__item"&gt;Second item&lt;/li&gt;
+    &lt;li class="b-marked-list__item"&gt;Third item&lt;/li&gt;
+    &lt;li class="b-marked-list__item"&gt;Fourth item&lt;/li&gt;
+  &lt;/ul&gt;</code>
+</pre>
+    </footer>
+</div>
+            </div>
+            <div class="logical-block">
+              <div class="logical-block__header">
+                <h2 data-scroll-index="4">Вспомогательные классы</h2>
+              </div>
+
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="js/common.min.js"></script>
+<script src="js/main.min.js"></script>
+<script>
+  /*$('#testForm').parsley().on('field:validated', function() {
+  if (this.validationResult === true) {
+    this.$element.closest('.b-form-section').removeClass('b-form-section--error').addClass('b-form-section--success');
+  } else {
+    this.$element.closest('.b-form-section').removeClass('b-form-section--success').addClass('b-form-section--error');
+  }
+  });*/
+</script>
+</body>
+</html>

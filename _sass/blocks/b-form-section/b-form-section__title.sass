@@ -1,0 +1,31 @@
+.b-form-section__title
+    display: inline-block
+    margin-bottom: 5px
+    line-height: 19px
+    font-weight: bold
+    color: $text-color
+
+    .b-form-section--success &--valid-block
+        display: inline-block
+        &:after
+            content: ""
+            display: inline-block
+            width: 19px
+            height: 19px
+            background: url(../img/valid.png) center no-repeat
+            vertical-align: middle
+            margin-left: 5px
+            +transition()
+
+
+    .b-form-section--error &--valid-block
+        display: inline-block
+        &:after
+            content: ""
+            display: inline-block
+            width: 20px
+            height: 20px
+            background: url(../img/not_valid.png) center no-repeat
+            vertical-align: middle
+            margin-left: 5px
+            +transition()

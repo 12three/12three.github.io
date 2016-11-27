@@ -1,0 +1,116 @@
+/* --- scroll-nav --- */
+.scroll-nav
+    position: relative
+    z-index: 1
+    width: 150px
+    float: left
+    margin: 30px 0
+
+    &__list
+        list-style: none
+        padding: 0
+
+    &.fixed
+        position: fixed
+
+/* --- /scroll-nav --- */
+body
+    padding: 0
+
+.main
+    position: relative
+    padding: 0 20px 0 185px
+    @media(max-width: 768px)
+        padding: 0
+
+    &:before
+        content: ''
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 160px
+        width: 1px
+        background: #eee
+        @media(max-width: 768px)
+            width: 0
+
+.b-example
+    border: 1px solid #eee
+    border-radius: 4px
+    margin-bottom: 3.357142857142858em;
+
+    header
+        padding: 20px 20px 10px 20px
+        border-bottom: 1px solid #eee
+
+    footer
+        code[class*="language-"],
+        pre[class*="language-"]
+            margin: 0
+            border-radius: 0px
+
+    &__prev-shelf
+        width: 100%
+
+        td
+            text-align: center
+            padding: 5px
+
+.logical-block
+    position: relative
+    margin-bottom: 60px
+
+    &__header
+        margin-bottom: 15px
+        border-bottom: 1px solid transparent
+
+        h2
+            margin: 10px 0
+
+        &:after
+            content: ""
+            display: block
+            height: 1px
+            background-color: #eee
+            position: absolute
+            left: -24px
+            right: 0
+
+
+
+.table
+    width: 100%
+    margin-bottom: 2.57142857142858em
+
+    tr
+        td,
+        th
+            padding: 12px
+            border: 1px solid $gray-color
+
+    thead
+        th
+            font-weight: bold
+            vertical-align: bottom
+            text-align: left
+
+    tbody
+        td
+            vertical-align: top
+
+        tr:nth-child(odd)
+            background-color: rgba(0,0,0,.05)
+
+    &--first-col-title
+        tbody
+            tr td:nth-child(1)
+                font-weight: bold
+
+.footnote
+    color: #c2c5c7
+    font-style: italic
+    font-weight: normal !important
+
+
+
+

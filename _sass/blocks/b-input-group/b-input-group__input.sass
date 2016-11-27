@@ -1,0 +1,32 @@
+.b-input-group__input
+    display: block
+    width: 100%
+    border-top-right-radius: 3px
+    border-bottom-right-radius: 3px
+    border-top-left-radius: 0px !important
+    border-bottom-left-radius: 0px !important
+    border: $gray-color solid 1px
+    padding: 6px 12px
+    outline: none
+    background-color: white
+    +transition()
+
+    &:focus
+        box-shadow: 0 0 8px rgba(114,184,70,.6)
+        border: 1px solid $green-color
+        &::-webkit-input-placeholder
+            opacity: 0
+        &::-moz-placeholder
+            opacity: 0
+        &:-moz-placeholder
+            opacity: 0
+        &:-ms-input-placeholder
+            opacity: 0
+
+    &[disabled]
+        background-color: lighten($gray-color, 5%)
+        cursor: not-allowed
+        color: lighten($text-color, 50%) !important
+
+    &[disabled]:hover
+        cursor: not-allowed

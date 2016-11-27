@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>jiji-framework</title>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+  <link rel="stylesheet" href="css/common.min.css">
+  <link rel="stylesheet" href="css/main.min.css"></head>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"></script>
+<body>
+
+  <div class="container">
+    <div class="main-wrapp">
+      <div class="main">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="logical-block">
+              <div class="logical-block__header">
+                <h2 data-scroll-index="1" class="h-inline-block h-pr-5">Поддержка браузерами</h2><span class="footnote">состояние на 09.16</span>
+              </div>
+//= templates/compatibility-tables.html
+            </div>
+            <div class="logical-block">
+              <div class="logical-block__header">
+                <h2 data-scroll-index="2">Кнопки</h2>
+              </div>
+//= templates/buttons.html
+            </div>
+            <div class="logical-block">
+              <div class="logical-block__header">
+                <h2 data-scroll-index="3">Элементы форм</h2>
+              </div>
+//= templates/forms.html
+            </div>
+            <div class="logical-block">
+              <div class="logical-block__header">
+                <h2 data-scroll-index="5">Блок для контента</h2>
+              </div>
+//= templates/content-blocks.html
+            </div>
+            <div class="logical-block">
+              <div class="logical-block__header">
+                <h2 data-scroll-index="4">Списки</h2>
+              </div>
+//= templates/lists.html
+            </div>
+            <div class="logical-block">
+              <div class="logical-block__header">
+                <h2 data-scroll-index="4">Вспомогательные классы</h2>
+              </div>
+//= templates/helper-classes.html
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="js/common.min.js"></script>
+<script src="js/main.min.js"></script>
+<script>
+  /*$('#testForm').parsley().on('field:validated', function() {
+  if (this.validationResult === true) {
+    this.$element.closest('.b-form-section').removeClass('b-form-section--error').addClass('b-form-section--success');
+  } else {
+    this.$element.closest('.b-form-section').removeClass('b-form-section--success').addClass('b-form-section--error');
+  }
+  });*/
+</script>
+</body>
+</html>
