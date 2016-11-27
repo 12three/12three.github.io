@@ -617,7 +617,8 @@ body {
     transform: rotate(360deg); } }
 
 .b-button,
-a.b-button {
+a.b-button,
+button.b-button {
   position: relative;
   display: inline-block;
   min-height: 41px;
@@ -635,65 +636,83 @@ a.b-button {
   -o-transition: all linear 0.2s;
   transition: all linear 0.2s; }
   .b-button:hover,
-  a.b-button:hover {
+  a.b-button:hover,
+  button.b-button:hover {
     background-color: #f2f2f2;
     text-decoration: none; }
   .b-button:active,
-  a.b-button:active {
+  a.b-button:active,
+  button.b-button:active {
     background-color: #f2f2f2; }
   .b-button:focus,
-  a.b-button:focus {
+  a.b-button:focus,
+  button.b-button:focus {
     outline: none; }
   .b-button[disabled],
-  a.b-button[disabled] {
+  a.b-button[disabled],
+  button.b-button[disabled] {
     background-color: #eceeef !important;
     cursor: not-allowed;
-    color: #c7cacd;
+    color: #c7cacd !important;
     border: 1px solid #dee2e4; }
   .b-button[disabled]:hover,
-  a.b-button[disabled]:hover {
+  a.b-button[disabled]:hover,
+  button.b-button[disabled]:hover {
     cursor: not-allowed; }
   .b-button--primary,
-  a.b-button--primary {
+  a.b-button--primary,
+  button.b-button--primary {
     background-color: #70b93f;
     border-color: #70b93f;
-    color: white !important; }
+    color: white; }
     .b-button--primary:hover,
-    a.b-button--primary:hover {
+    a.b-button--primary:hover,
+    button.b-button--primary:hover {
       background-color: #64a639;
       text-decoration: none; }
     .b-button--primary:active,
-    a.b-button--primary:active {
+    a.b-button--primary:active,
+    button.b-button--primary:active {
       background-color: #64a639; }
   .b-button--secondary,
-  a.b-button--secondary {
+  a.b-button--secondary,
+  button.b-button--secondary {
     background-color: #ffad43;
     border-color: #ffad43;
     color: white; }
     .b-button--secondary:hover,
-    a.b-button--secondary:hover {
+    a.b-button--secondary:hover,
+    button.b-button--secondary:hover {
       background-color: #ffa22a;
       text-decoration: none; }
     .b-button--secondary:active,
-    a.b-button--secondary:active {
+    a.b-button--secondary:active,
+    button.b-button--secondary:active {
       background-color: #ffa22a; }
   .b-button--info,
-  a.b-button--info {
+  a.b-button--info,
+  button.b-button--info {
     background-color: #3365b0;
     border-color: #3365b0;
     color: white; }
     .b-button--info:hover,
-    a.b-button--info:hover {
+    a.b-button--info:hover,
+    button.b-button--info:hover {
       background-color: #2d5a9c;
       text-decoration: none; }
     .b-button--info:active,
-    a.b-button--info:active {
+    a.b-button--info:active,
+    button.b-button--info:active {
       background-color: #2d5a9c; }
   .b-button--default-light, .b-button--primary-light, .b-button--secondary-light, .b-button--info-light,
   a.b-button--default-light,
   a.b-button--primary-light,
   a.b-button--secondary-light,
-  a.b-button--info-light {
+  a.b-button--info-light,
+  button.b-button--default-light,
+  button.b-button--primary-light,
+  button.b-button--secondary-light,
+  button.b-button--info-light {
     border: 2px solid #dee2e4;
     border-radius: 5px;
     padding: 10px 40px;
@@ -702,53 +721,71 @@ a.b-button {
     a.b-button--default-light[disabled],
     a.b-button--primary-light[disabled],
     a.b-button--secondary-light[disabled],
-    a.b-button--info-light[disabled] {
-      border: 2px solid #dee2e4;
+    a.b-button--info-light[disabled],
+    button.b-button--default-light[disabled],
+    button.b-button--primary-light[disabled],
+    button.b-button--secondary-light[disabled],
+    button.b-button--info-light[disabled] {
+      border: 2px solid #dee2e4 !important;
       background-color: #eceeef !important; }
   .b-button--primary-light,
-  a.b-button--primary-light {
+  a.b-button--primary-light,
+  button.b-button--primary-light {
     border-color: #70b93f;
-    color: #70b93f !important; }
+    color: #70b93f; }
     .b-button--primary-light:hover, .b-button--primary-light:active,
     a.b-button--primary-light:hover,
-    a.b-button--primary-light:active {
+    a.b-button--primary-light:active,
+    button.b-button--primary-light:hover,
+    button.b-button--primary-light:active {
       background-color: #edf7e7;
       text-decoration: none !important;
       color: #70b93f; }
     .b-button--primary-light:visited,
-    a.b-button--primary-light:visited {
+    a.b-button--primary-light:visited,
+    button.b-button--primary-light:visited {
       color: #70b93f; }
   .b-button--secondary-light,
-  a.b-button--secondary-light {
+  a.b-button--secondary-light,
+  button.b-button--secondary-light {
     border-color: #ffad43;
-    color: #ffad43 !important; }
+    color: #ffad43; }
     .b-button--secondary-light:hover, .b-button--secondary-light:active,
     a.b-button--secondary-light:hover,
-    a.b-button--secondary-light:active {
+    a.b-button--secondary-light:active,
+    button.b-button--secondary-light:hover,
+    button.b-button--secondary-light:active {
       background-color: #fff0dc;
       text-decoration: none !important;
       color: #ffad43; }
     .b-button--secondary-light:visited,
-    a.b-button--secondary-light:visited {
+    a.b-button--secondary-light:visited,
+    button.b-button--secondary-light:visited {
       color: #ffad43; }
   .b-button--info-light,
-  a.b-button--info-light {
+  a.b-button--info-light,
+  button.b-button--info-light {
     border-color: #3365b0;
-    color: #3365b0 !important; }
+    color: #3365b0; }
     .b-button--info-light:hover, .b-button--info-light:active,
     a.b-button--info-light:hover,
-    a.b-button--info-light:active {
+    a.b-button--info-light:active,
+    button.b-button--info-light:hover,
+    button.b-button--info-light:active {
       background-color: #d6e1f3;
       text-decoration: none !important;
       color: #3365b0; }
     .b-button--info-light:visited,
-    a.b-button--info-light:visited {
+    a.b-button--info-light:visited,
+    button.b-button--info-light:visited {
       color: #3365b0; }
   .b-button--load,
-  a.b-button--load {
+  a.b-button--load,
+  button.b-button--load {
     padding: 10px 41px 10px 19px; }
     .b-button--load:after,
-    a.b-button--load:after {
+    a.b-button--load:after,
+    button.b-button--load:after {
       content: '';
       display: inline-block;
       position: absolute;
@@ -775,75 +812,99 @@ a.b-button {
     .b-button--load.b-button--primary:after, .b-button--load.b-button--secondary:after, .b-button--load.b-button--info:after,
     a.b-button--load.b-button--primary:after,
     a.b-button--load.b-button--secondary:after,
-    a.b-button--load.b-button--info:after {
-      border-left: 2px solid rgba(255, 255, 255, 0.8) !important;
-      border-top: 2px solid rgba(255, 255, 255, 0.9) !important;
-      border-right: 2px solid white !important; }
+    a.b-button--load.b-button--info:after,
+    button.b-button--load.b-button--primary:after,
+    button.b-button--load.b-button--secondary:after,
+    button.b-button--load.b-button--info:after {
+      border-left: 2px solid rgba(255, 255, 255, 0.8);
+      border-top: 2px solid rgba(255, 255, 255, 0.9);
+      border-right: 2px solid white; }
     .b-button--load.b-button--default-light, .b-button--load.b-button--primary-light, .b-button--load.b-button--secondary-light, .b-button--load.b-button--info-light,
     a.b-button--load.b-button--default-light,
     a.b-button--load.b-button--primary-light,
     a.b-button--load.b-button--secondary-light,
-    a.b-button--load.b-button--info-light {
+    a.b-button--load.b-button--info-light,
+    button.b-button--load.b-button--default-light,
+    button.b-button--load.b-button--primary-light,
+    button.b-button--load.b-button--secondary-light,
+    button.b-button--load.b-button--info-light {
       padding: 10px 50px 10px 30px; }
       .b-button--load.b-button--default-light:after, .b-button--load.b-button--primary-light:after, .b-button--load.b-button--secondary-light:after, .b-button--load.b-button--info-light:after,
       a.b-button--load.b-button--default-light:after,
       a.b-button--load.b-button--primary-light:after,
       a.b-button--load.b-button--secondary-light:after,
-      a.b-button--load.b-button--info-light:after {
+      a.b-button--load.b-button--info-light:after,
+      button.b-button--load.b-button--default-light:after,
+      button.b-button--load.b-button--primary-light:after,
+      button.b-button--load.b-button--secondary-light:after,
+      button.b-button--load.b-button--info-light:after {
         right: 25px; }
     .b-button--load.b-button--primary-light:after,
-    a.b-button--load.b-button--primary-light:after {
-      border-left: 2px solid rgba(112, 185, 63, 0.8) !important;
-      border-top: 2px solid rgba(112, 185, 63, 0.9) !important;
-      border-right: 2px solid #70b93f !important; }
+    a.b-button--load.b-button--primary-light:after,
+    button.b-button--load.b-button--primary-light:after {
+      border-left: 2px solid rgba(112, 185, 63, 0.8);
+      border-top: 2px solid rgba(112, 185, 63, 0.9);
+      border-right: 2px solid #70b93f; }
     .b-button--load.b-button--secondary-light:after,
-    a.b-button--load.b-button--secondary-light:after {
-      border-left: 2px solid rgba(255, 173, 67, 0.8) !important;
-      border-top: 2px solid rgba(255, 173, 67, 0.9) !important;
-      border-right: 2px solid #ffad43 !important; }
+    a.b-button--load.b-button--secondary-light:after,
+    button.b-button--load.b-button--secondary-light:after {
+      border-left: 2px solid rgba(255, 173, 67, 0.8);
+      border-top: 2px solid rgba(255, 173, 67, 0.9);
+      border-right: 2px solid #ffad43; }
     .b-button--load.b-button--info-light:after,
-    a.b-button--load.b-button--info-light:after {
-      border-left: 2px solid rgba(51, 101, 176, 0.8) !important;
-      border-top: 2px solid rgba(51, 101, 176, 0.9) !important;
-      border-right: 2px solid #3365b0 !important; }
+    a.b-button--load.b-button--info-light:after,
+    button.b-button--load.b-button--info-light:after {
+      border-left: 2px solid rgba(51, 101, 176, 0.8);
+      border-top: 2px solid rgba(51, 101, 176, 0.9);
+      border-right: 2px solid #3365b0; }
     .b-button--load.b-button--size-full,
-    a.b-button--load.b-button--size-full {
+    a.b-button--load.b-button--size-full,
+    button.b-button--load.b-button--size-full {
       padding: 10px 40px 10px 40px; }
       .b-button--load.b-button--size-full:after,
-      a.b-button--load.b-button--size-full:after {
+      a.b-button--load.b-button--size-full:after,
+      button.b-button--load.b-button--size-full:after {
         right: 15px; }
     .b-button--load.b-button--size-small,
-    a.b-button--load.b-button--size-small {
+    a.b-button--load.b-button--size-small,
+    button.b-button--load.b-button--size-small {
       padding: 5px 10px; }
       .b-button--load.b-button--size-small:after,
-      a.b-button--load.b-button--size-small:after {
+      a.b-button--load.b-button--size-small:after,
+      button.b-button--load.b-button--size-small:after {
         display: none; }
   .b-button--border-radius,
-  a.b-button--border-radius {
+  a.b-button--border-radius,
+  button.b-button--border-radius {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     border-radius: 3px; }
   .b-button--shadow,
-  a.b-button--shadow {
+  a.b-button--shadow,
+  button.b-button--shadow {
     -webkit-transition: all ease-out 0.2s;
     -moz-transition: all ease-out 0.2s;
     -o-transition: all ease-out 0.2s;
     transition: all ease-out 0.2s;
     box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.15); }
     .b-button--shadow:hover,
-    a.b-button--shadow:hover {
+    a.b-button--shadow:hover,
+    button.b-button--shadow:hover {
       box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0); }
     .b-button--shadow[disabled],
-    a.b-button--shadow[disabled] {
+    a.b-button--shadow[disabled],
+    button.b-button--shadow[disabled] {
       box-shadow: none !important; }
   .b-button--size-small,
-  a.b-button--size-small {
+  a.b-button--size-small,
+  button.b-button--size-small {
     font-size: 12px;
     min-height: 20px;
     padding: 5px 10px; }
   .b-button--size-full,
-  a.b-button--size-full {
+  a.b-button--size-full,
+  button.b-button--size-full {
     width: 100%; }
 
 .b-content-area {
@@ -886,7 +947,8 @@ a.b-button {
     background-color: #70b93f;
     border-radius: 3px;
     vertical-align: middle;
-    margin-right: 10px; }
+    margin-right: 10px;
+    margin-top: -3px; }
 
 .h-inline-block {
   display: inline-block; }
