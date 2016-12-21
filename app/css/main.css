@@ -243,7 +243,6 @@ body {
 
 .b-form-section {
   position: relative;
-  z-index: 1;
   margin-bottom: 15px; }
   .b-form-section textarea,
   .b-form-section input,
@@ -255,7 +254,7 @@ body {
     color: #464b4f;
     resize: none !important;
     border: #dee2e4 solid 1px;
-    padding: 6px 12px;
+    padding: 8px 12px;
     outline: none;
     background-color: white;
     -webkit-border-radius: 3px;
@@ -567,7 +566,7 @@ body {
   border-top-left-radius: 0px !important;
   border-bottom-left-radius: 0px !important;
   border: #dee2e4 solid 1px;
-  padding: 6px 12px;
+  padding: 8px 12px;
   outline: none;
   background-color: white;
   -webkit-transition: all ease-out 0.2s;
@@ -624,7 +623,7 @@ button.b-button {
   min-height: 41px;
   cursor: pointer;
   text-align: center;
-  padding: 10px 30px;
+  padding: 8px 30px;
   text-decoration: none !important;
   font-size: 15px;
   color: #464b4f;
@@ -715,7 +714,7 @@ button.b-button {
   button.b-button--info-light {
     border: 2px solid #dee2e4;
     border-radius: 5px;
-    padding: 10px 40px;
+    padding: 8px 40px;
     background-color: transparent; }
     .b-button--default-light[disabled], .b-button--primary-light[disabled], .b-button--secondary-light[disabled], .b-button--info-light[disabled],
     a.b-button--default-light[disabled],
