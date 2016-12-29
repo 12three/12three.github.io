@@ -24,11 +24,9 @@
     <div class="main-wrapp">
       <div class="main">
         <div class="row">
-          <div class="col-xs-12">
-            <div class="logical-block">
-              <div class="logical-block__header">
-                <h2 data-scroll-index="1" class="h-inline-block h-pr-5">Поддержка браузерами</h2><span class="footnote">состояние на 09.16</span>
-              </div>
+          <div class="col-xs-12 h-pt-20">
+            <section class="logical-block">
+                <h2 class="logical-block__title" data-scroll-index="1" class="h-inline-block h-pr-5">Поддержка браузерами</h2><span class="footnote">состояние на 09.16</span>
 <p>Поддержка компонентов мобильными браузерами <span class="footnote">>76%</span></p>
 <table class="table">
     <thead>
@@ -74,11 +72,9 @@
         </tr>
     </tbody>
 </table>
-            </div>
-            <div class="logical-block">
-              <div class="logical-block__header">
-                <h2 data-scroll-index="2">Кнопки</h2>
-              </div>
+            </section>
+            <section class="logical-block">
+                <h2 class="logical-block__title" data-scroll-index="2">Кнопки</h2>
 <h3>Типы</h3>
 <div class="b-example">
     <header>
@@ -88,35 +84,51 @@
                     <button class="b-button" >Кнопка</button>
                 </td>
                 <td>
+                    <button class="b-button b-button--default-light">Кнопка</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
                     <button class="b-button b-button--primary">Кнопка</button>
                 </td>
+                <td>
+                    <button class="b-button b-button--primary-light">Кнопка</button>
+                </td>
+            </tr>
+            <tr>
                 <td>
                     <button class="b-button b-button--secondary">Кнопка</button>
                 </td>
                 <td>
+                    <button class="b-button b-button--secondary-light">Кнопка</button>
+                </td>
+            </tr>
+            <tr>
+            </tr>
+                <td>
                     <button class="b-button b-button--info">Кнопка</button>
                 </td>
                 <td>
-                    <button class="b-button b-button--info" disabled>Кнопка</button>
+                    <button class="b-button b-button--info-light">Кнопка</button>
+                </td>
+            <tr>
+            </tr>
+            <tr>
+                <td>
+                    <button class="b-button b-button--error">Кнопка</button>
+                </td>
+                <td>
+                    <button class="b-button b-button--error-light">Кнопка</button>
                 </td>
             </tr>
-                <tr>
-                    <td>
-                        <button class="b-button b-button--default-light">Кнопка</button>
-                    </td>
-                    <td>
-                        <button class="b-button b-button--primary-light">Кнопка</button>
-                    </td>
-                    <td>
-                        <button class="b-button b-button--secondary-light">Кнопка</button>
-                    </td>
-                    <td>
-                        <button class="b-button b-button--info-light">Кнопка</button>
-                    </td>
-                    <td>
-                        <button class="b-button b-button--info-light" disabled>Кнопка</button>
-                    </td>
-                </tr>
+            <tr>
+                <td>
+                    <button class="b-button b-button--info" disabled>Кнопка</button>
+                </td>
+                <td>
+                    <button class="b-button b-button--info-light" disabled>Кнопка</button>
+                </td>
+            </tr>
         </table>
     </header>
     <footer>
@@ -125,6 +137,7 @@
   &lt;button class="b-button b-button--primary"&gt;Кнопка&lt;/button&gt;
   &lt;button class="b-button b-button--secondary"&gt;Кнопка&lt;/button&gt;
   &lt;button class="b-button b-button--info"&gt;Кнопка&lt;/button&gt;
+  &lt;button class="b-button b-button--error"&gt;Кнопка&lt;/button&gt;
   &lt;!-- неактивное состояние --&gt;
   &lt;button class="b-button b-button--info" disabled&gt;    Кнопка&lt;/button&gt;
 
@@ -132,6 +145,7 @@
   &lt;button class="b-button b-button--primary-light"&gt;Кнопка&lt;/button&gt;
   &lt;button class="b-button b-button--secondary-light"&gt;Кнопка&lt;/button&gt;
   &lt;button class="b-button b-button--info-light"&gt;Кнопка&lt;/button&gt;
+  &lt;button class="b-button b-button--error-light"&gt;Кнопка&lt;/button&gt;
   &lt;!-- неактивное состояние --&gt;
   &lt;button class="b-button b-button--info-light" disabled&gt;  Кнопка&lt;/button&gt;</code></pre>
 </footer>
@@ -192,11 +206,9 @@
   &lt;button class="b-button b-button--primary b-button--load"&gt;Кнопка&lt;/button&gt;</code></pre>
 </footer>
 </div>
-            </div>
-            <div class="logical-block">
-              <div class="logical-block__header">
-                <h2 data-scroll-index="3">Элементы форм</h2>
-              </div>
+            </section>
+            <section class="logical-block">
+                <h2 class="logical-block__title" data-scroll-index="3">Элементы форм</h2>
 <p>По умолчанию размер элемента зависят от контекста в котором используется, для получения требуемой ширины ее нужно задать обертке.</p>
 <div class="b-example">
     <header>
@@ -615,11 +627,9 @@
 </pre>
                 </footer>
               </div>
-            </div>
-            <div class="logical-block">
-              <div class="logical-block__header">
-                <h2 data-scroll-index="5">Блок для контента</h2>
-              </div>
+            </section>
+            <section class="logical-block">
+                <h2 class="logical-block__title" data-scroll-index="5">Блок для контента</h2>
 
 <div class="b-example">
     <header>
@@ -645,11 +655,9 @@
 </pre>
     </footer>
 </div>
-            </div>
-            <div class="logical-block">
-              <div class="logical-block__header">
+            </section>
+            <section class="logical-block">
                 <h2 data-scroll-index="4">Списки</h2>
-              </div>
 <div class="b-example">
     <header>
         <div>
@@ -672,7 +680,7 @@
 </pre>
     </footer>
 </div>
-            </div>
+            </section>
             <!-- <div class="logical-block">
               <div class="logical-block__header">
                 <h2 data-scroll-index="4">Вспомогательные классы</h2>

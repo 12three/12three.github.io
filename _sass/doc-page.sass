@@ -1,8 +1,8 @@
 /* --- scroll-nav --- */
 .scroll-nav
-    position: relative
+    position: fixed
     z-index: 1
-    width: 150px
+    width: 160px
     float: left
     margin: 30px 0
 
@@ -10,8 +10,27 @@
         list-style: none
         padding: 0
 
+    &__item
+        a
+            display: block
+            padding: 3px 5px
+            color: lighten($text-color, 20%)
+            text-decoration: none
+
+        &.active a
+            background-color: #F5F5F5
+            color: $text-color
+
+        &:hover a
+            background-color: #F5F5F5
+            color: $text-color
+
+
     &.fixed
         position: fixed
+
+    @media(max-width: 768px)
+        display: none
 
 /* --- /scroll-nav --- */
 body
@@ -60,9 +79,12 @@ body
     position: relative
     margin-bottom: 60px
 
-    &__header
+    &__title
+        position: relative
+        box-sizing: border-box
+        padding: 10px 0
+        margin-top: 0
         margin-bottom: 15px
-        border-bottom: 1px solid transparent
 
         h2
             margin: 10px 0
@@ -75,6 +97,7 @@ body
             position: absolute
             left: -24px
             right: 0
+            bottom: 0
 
 
 
@@ -111,6 +134,48 @@ body
     font-style: italic
     font-weight: normal !important
 
+.h-pt-20
+    padding-top: 20px
 
 
+.h-vflex
+	display: flex
+	align-content: flex-start
+	overflow: hidden
+	flex-direction: column
 
+.h-hflex
+	display: flex
+	align-content: flex-start
+	overflow: hidden
+	flex-direction: row
+
+.h-flex
+	flex: 1
+
+.h-flex-wrap
+	flex-wrap: wrap
+
+.h-flex-1-0-100
+	flex: 1 0 100%
+
+.h-flex-0-0-25
+	flex: 0 0 25%
+
+.h-flex-0-0-33
+	flex: 0 0 33.3%
+
+.h-flex-1-1-100
+	flex: 1 1 100%
+
+.h-flex-1-0-auto
+	flex: 1 0 auto
+
+.h-flex-main-center
+	justify-content: center
+
+.h-flex-space-between
+	justify-content: space-between
+
+.h-flex-cross-center
+	align-items: center

@@ -19,7 +19,7 @@ button.b-button
     font-weight: bold
     background-color: white
     border: 1px solid #dee2e4
-    +transition( all, linear)
+    transition: all, linear, .2s
 
     &:hover
         background-color: darken( white, 5% )
@@ -77,11 +77,24 @@ button.b-button
         &:active
             background-color: darken( $blue-color, 5% )
 
+    &--error
+        background-color: $error-color
+        border-color: $error-color
+        color: white
+
+        &:hover
+            background-color: darken( $error-color, 5% )
+            text-decoration: none
+
+        &:active
+            background-color: darken( $error-color, 5% )
+
 
     &--default-light,
     &--primary-light,
     &--secondary-light,
-    &--info-light
+    &--info-light,
+    &--error-light
         border: 2px solid $gray-color
         border-radius: 5px
         padding: 8px 40px
@@ -133,6 +146,19 @@ button.b-button
         &:visited
             color: $blue-color
 
+    &--error-light
+        border-color: $error-color
+        color: $error-color
+
+        &:hover,
+        &:active
+            background-color: lighten( $error-color, 40% )
+            text-decoration: none !important
+            color: $error-color
+
+        &:visited
+            color: $error-color
+
     &--load
         padding: 10px 41px 10px 19px
 
@@ -152,8 +178,8 @@ button.b-button
             opacity: 1
             border-bottom: 3px solid transparent
             animation: rotate .7s infinite linear
-            +transition( all, linear )
-            +border-radius( 10px )
+            transition: all linear .2s
+            border-radius: 10px
 
         &.b-button--primary:after,
         &.b-button--secondary:after,
@@ -197,11 +223,11 @@ button.b-button
                 display: none
 
     &--border-radius
-        +border-radius( 3px )
+        border-radius: 3px
 
 
     &--shadow
-        +transition( all )
+        transition: all ease-out 0.2s
         box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.15)
 
         &:hover
@@ -217,3 +243,6 @@ button.b-button
 
     &--size-full
         width: 100%
+
+    &--size-medium
+        width: 250px
