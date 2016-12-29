@@ -172,6 +172,7 @@ select {
 
 /* --- /scroll-nav --- */
 body {
+  min-width: 650px;
   padding: 0; }
 
 .main {
