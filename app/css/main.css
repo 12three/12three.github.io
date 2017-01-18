@@ -250,12 +250,22 @@ body {
     font-weight: bold; }
 
 .footnote {
+  font-size: 14px;
   color: #c2c5c7;
   font-style: italic;
   font-weight: normal !important; }
 
 .h-pt-20 {
   padding-top: 20px; }
+
+.h-text-right {
+  text-align: right; }
+
+.h-text-center {
+  text-align: center; }
+
+.h-mb-10 {
+  margin-bottom: 10px; }
 
 .h-vflex {
   display: flex;
@@ -959,6 +969,18 @@ button.b-button {
     a.b-button--shadow[disabled],
     button.b-button--shadow[disabled] {
       box-shadow: none !important; }
+  .b-button--default:active, .b-button--primary:active, .b-button--secondary:active, .b-button--info:active, .b-button--error:active,
+  a.b-button--default:active,
+  a.b-button--primary:active,
+  a.b-button--secondary:active,
+  a.b-button--info:active,
+  a.b-button--error:active,
+  button.b-button--default:active,
+  button.b-button--primary:active,
+  button.b-button--secondary:active,
+  button.b-button--info:active,
+  button.b-button--error:active {
+    box-shadow: inset 0px 3px 5px 0px rgba(50, 50, 50, 0.15); }
   .b-button--size-small,
   a.b-button--size-small,
   button.b-button--size-small {

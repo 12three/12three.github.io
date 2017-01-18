@@ -26,7 +26,7 @@
         <div class="row">
           <div class="col-xs-12 h-pt-20">
             <section class="logical-block">
-                <h2 class="logical-block__title" data-scroll-index="1" class="h-inline-block h-pr-5">Поддержка браузерами</h2><span class="footnote">состояние на 09.16</span>
+                <h2 class="logical-block__title" data-scroll-index="1" class="h-inline-block h-pr-5">Поддержка браузерами</h2>
 <p>Поддержка компонентов мобильными браузерами <span class="footnote">>76%</span></p>
 <table class="table">
     <thead>
@@ -52,7 +52,7 @@
 </table>
 
 <p>Поддержка компонентов десктопными браузерами и планшетами <span class="footnote">7,55%</span></p>
-<table class="table">
+<table class="table h-mb-10">
     <thead>
         <tr>
             <th>Chrome <span class="footnote">41,5%</span></th>
@@ -72,9 +72,52 @@
         </tr>
     </tbody>
 </table>
+<div class="h-text-right">
+    <span class="footnote">состояние на 09.16</span>
+</div>
             </section>
             <section class="logical-block">
-                <h2 class="logical-block__title" data-scroll-index="2">Кнопки</h2>
+                <h2 class="logical-block__title" data-scroll-index="2" class="h-inline-block h-pr-5">Способ именования классов</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Тип</th>
+            <th>Префикс</th>
+            <th>Описание</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Компонент <span class="footnote">(Block)</span></td>
+            <td class="h-text-center">b-</td>
+            <td>Формируют основу приложения и содержат всю косметику для отдельных блоков</td>
+        </tr>
+        <tr>
+            <td>Модуль макета <span class="footnote">(Layout module)</span></td>
+            <td class="h-text-center">l-</td>
+            <td>У этих модулей нет никакой косметики, используются только для позиционирования блоков и для построения макета приложения.</td>
+        </tr>
+        <tr>
+            <td>Помощники <span class="footnote">(Helpers)</span></td>
+            <td class="h-text-center">h-</td>
+            <td>Вспомогательные классы</td>
+        </tr>
+        <tr>
+            <td>Скрипты <span class="footnote">(JavaScript)</span></td>
+            <td class="h-text-center">js-</td>
+            <td>Они указывают на то, что поведение JavaScript привязано к блоку. Стили с ними не ассоциируются; используются только для облегчения манипуляций со скриптами. Не имеют стилей</td>
+        </tr>
+        <tr>
+            <td>Тестирование <span class="footnote">(quality-assurance)</span></td>
+            <td class="h-text-center">qa-</td>
+            <td>Используются для проведения тетов.Не имеют стилей</td>
+        </tr>
+    </tbody>
+</table>
+            </section>
+            <section class="logical-block">
+                <h2 class="logical-block__title" data-scroll-index="3">Кнопки</h2>
 <h3>Типы</h3>
 <div class="b-example">
     <header>
@@ -215,7 +258,7 @@
 </div>
             </section>
             <section class="logical-block">
-                <h2 class="logical-block__title" data-scroll-index="3">Элементы форм</h2>
+                <h2 class="logical-block__title" data-scroll-index="4">Элементы форм</h2>
 <p>По умолчанию размер элемента зависят от контекста в котором используется, для получения требуемой ширины ее нужно задать обертке.</p>
 <div class="b-example">
     <header>
@@ -381,6 +424,26 @@
   &lt;/div&gt;</code>
 </pre>
     </footer>
+</div>
+<div class="b-example">
+  <header>
+    <div class="b-form-section">
+        <label class="b-form-section__title">Editable textarea</label>
+        <div class="b-form-section__elem-wrapp">
+            <textarea class="b-form-section__editable-textarea" rows="5" id="textarea-02"></textarea>
+        </div>
+    </div>
+  </header>
+  <footer>
+<pre class="language-markup">
+<code class="language-markup">  &lt;div class="b-form-section" &gt;
+    &lt;label class="b-form-section__title"&gt;Select`s title&lt;/label&gt;
+    &lt;div class="b-form-section__elem-wrapp"&gt;
+      &lt;textarea class="b-form-section__editable-textarea" rows="5" id="textarea-02"&gt;&lt;/textarea&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;</code>
+</pre>
+  </footer>
 </div>
 <div class="b-example">
     <header>
@@ -664,7 +727,7 @@
 </div>
             </section>
             <section class="logical-block">
-                <h2 data-scroll-index="4">Списки</h2>
+                <h2 class="logical-block__title" data-scroll-index="4">Списки</h2>
 <div class="b-example">
     <header>
         <div>

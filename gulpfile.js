@@ -11,14 +11,12 @@ const gulp = require('gulp'),
       connect = require('gulp-connect'),
       rigger = require('gulp-rigger');
 
-gulp.task('browserSync', function() {
+gulp.task('browserSync', function () {
   browserSync({
-    server: {
-      baseDir: "./app/"
-    },
+    server: { baseDir: './app/' },
     port: 8080,
     open: true,
-    notify: false
+    notify: false,
   });
 });
 
@@ -53,11 +51,11 @@ gulp.task('css', function(){
 
 //commonJs
 gulp.task('commonJs', function(){
-    return gulp.src(['libs/jquery/jquery.min.js', 'libs/**/*.js'])
-        .pipe(concat('common.js'))
-        /*.pipe(uglify())*/
-        .pipe(rename({suffix: '.min'}))
-        .pipe(gulp.dest('app/js'))
+  return gulp.src(['libs/jquery/jquery.min.js', 'libs/**/*.js'])
+    .pipe(concat('common.js'))
+    /*.pipe(uglify())*/
+    .pipe(rename({ suffix: '.min' }))
+    .pipe(gulp.dest('app/js'));
 });
 
 //js

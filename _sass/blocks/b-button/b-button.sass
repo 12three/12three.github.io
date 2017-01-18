@@ -236,6 +236,14 @@ button.b-button
         &[disabled]
             box-shadow: none !important
 
+    &--default,
+    &--primary,
+    &--secondary,
+    &--info,
+    &--error
+        &:active
+            box-shadow: inset 0px 3px 5px 0px rgba(50, 50, 50, 0.15)
+
     &--size-small
         font-size: 12px
         min-height: 20px
