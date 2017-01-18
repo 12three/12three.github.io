@@ -2132,7 +2132,9 @@ i.mce-i-backcolor {
   border-color: #dee2e4 !important;
   background-color: #f5f5f5 !important;
 }
-
+.mce-btn-group {
+  margin: 0 !important;
+}
 .mce-panel {
     background: #fff;
     border: 0;
