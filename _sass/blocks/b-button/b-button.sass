@@ -21,6 +21,32 @@ button.b-button
     border: 1px solid #dee2e4
     transition: all, linear, .2s
 
+    &__icon
+      position: relative
+      display: flex
+      align-items: center
+      flex: 0 0 auto
+      padding-right: 7px
+      min-height: 31px
+
+      &:after
+        content: ''
+        position: absolute
+        top: 0
+        right: 0
+        bottom: 0
+        width: 1px
+        background: rgba(255, 255, 255, .5)
+        min-height: 31px
+
+    &__text
+      display: flex
+      align-items: center
+      justify-content: center
+      padding-left: 7px
+      word-break: break-all
+      min-width: 67px
+
     &:hover
         background-color: darken( white, 5% )
         text-decoration: none
@@ -208,9 +234,9 @@ button.b-button
             border-right: 2px solid rgba(255, 173, 67, 1)
 
         &.b-button--info-light:after
-            border-left: 2px solid rgba(51, 101, 176, .8)
-            border-top: 2px solid rgba(51, 101, 176, .9)
-            border-right: 2px solid rgba(51, 101, 176, 1)
+            border-left: 2px solid rgba(0, 173, 241, .8)
+            border-top: 2px solid rgba(0, 173, 241, .9)
+            border-right: 2px solid rgba(0, 173, 241, 1)
 
         &.b-button--size-full
             padding: 10px 40px 10px 40px
@@ -221,6 +247,7 @@ button.b-button
             padding: 5px 10px
             &:after
                 display: none
+
 
     &--border-radius
         border-radius: 3px
@@ -235,6 +262,13 @@ button.b-button
 
         &[disabled]
             box-shadow: none !important
+
+
+    &--width-icon
+      display: flex
+      padding: 4px 7px
+      align-items: stretch
+
 
     &--default,
     &--primary,
